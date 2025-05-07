@@ -2,6 +2,8 @@ import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import UserCard from '@/components/Users/User';
 import usersData from '@/data/users.json';
+import Image from 'next/image';
+import DataTable, { TableColumn } from 'react-data-table-component';
 
 type User = {
   id: number;
@@ -16,6 +18,38 @@ type Props = {
   users: User[];
 };
 
+const columns: TableColumn<User>[] = [
+  {
+    name: 'Name',
+    selector: row => row.name,
+    width: "300px",
+  },
+  {
+    name: 'Job Title',
+    selector: row => row.jobTitle,
+    width: "300px",
+  },
+  {
+    name: 'Image',
+    selector: row =>  row.image,
+    width: "300px",
+    cell: (row) => (
+        <Image
+          src={row.image}
+          alt={row.imageAlt}
+          width={80}
+          height={80}
+          loading="lazy"
+        />
+    ),
+  },
+  {
+    name: 'Description',
+    width: "300px",
+    selector: row => row.description,
+  },
+];
+
 export default function Home({ users }: Props) {
   return (
     <>
@@ -25,22 +59,7 @@ export default function Home({ users }: Props) {
       </Head>
       <main>
         <h1 tabIndex={0} style={{marginBottom: "50px"}}>Explore Handpicked US-Based Professionals with Proven Expertise</h1>
-        <ul>
-
-        <div style={{ display: "flex", justifyContent: 'space-between', gap: "20px", flexWrap: "nowrap" }}>
-          {users.map((user) => (
-            <UserCard 
-              key={user.id} 
-              id={user.id} 
-              name={user.name} 
-              description={user.description} 
-              image={user.image} 
-              jobTitle={user.jobTitle} 
-              imageAlt={user.imageAlt}
-            />
-          ))}
-          </div>
-        </ul>
+        <DataTable columns={columns} data={users} />
       </main>
     </>
   );
