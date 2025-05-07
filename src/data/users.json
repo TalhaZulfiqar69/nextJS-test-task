@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Emily Carter",
+    "jobTitle": "Front-End Developer",
+    "description": " Emily Carter is a dedicated Front-End Developer based in Austin, Texas, with over 6 years of experience in building interactive, SEO-friendly, and responsive websites using React, Next.js, and Tailwind CSS. She specializes in clean code architecture, component-based design, and performance optimization. Emily has collaborated with product teams to deliver high-impact UI solutions that scale with business needs. Her work is driven by usability, accessibility standards, and continuous learning in modern JavaScript frameworks.",
+    "image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "imageAlt": "Emily Carter - Front-End Developer from Austin, TX"
+  },
+  {
+    "id": 2,
+    "name": "James Mitchell",
+    "jobTitle": "Full-Stack Developer",
+    "description": "James Mitchell is a highly experienced Full-Stack Developer from Seattle, Washington, with expertise in Node.js, Next.js, and cloud-based deployment using AWS. With more than 8 years in the tech industry, James builds robust and scalable web applications with strong backend logic and seamless front-end experiences. He has led development teams on enterprise projects involving REST APIs, SSR, and advanced caching for optimal performance. His passion lies in crafting clean, maintainable code and delivering full-cycle development from wireframe to deployment.",
+    "image": "https://randomuser.me/api/portraits/men/45.jpg",
+    "imageAlt": "James Mitchell - Full-Stack Web Developer from Seattle, WA"
+  },
+  {
+    "id": 3,
+    "name": "Brandon Lee",
+    "jobTitle": "Digital Marketing Strategist",
+    "description": "Brandon Lee is a data-driven Digital Marketing Strategist based in Denver, Colorado, with 7+ years of hands-on experience in SEO, Google Ads, email marketing, and conversion rate optimization (CRO). He has helped B2B and B2C brands significantly increase organic traffic and ROI through technical SEO audits, content strategy, and integrated digital campaigns. Brandon’s approach blends creative messaging with analytics, ensuring every campaign is performance-oriented and aligned with business goals.",
+    "image": "https://randomuser.me/api/portraits/men/46.jpg",
+    "imageAlt": "Brandon Lee - Digital Marketing Expert from Denver, CO"
+  }
+]
